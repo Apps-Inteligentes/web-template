@@ -14,8 +14,8 @@ Also contains a sample how to extract css components (TailwindCSS) (https://tail
 # How to use
 * `git clone git@github.com:Apps-Inteligentes/web-template.git`
 * `npm i`
-* `npm run dev`
-
+* `npm run dev` to compile. or `npm run watch` to recompile on every file change. 
+* `npm run prod` to build the code optimized for production
 
 # Run example
 * Open the `index.html` file OR

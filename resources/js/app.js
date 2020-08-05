@@ -2,11 +2,11 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 
-// AUTOMATICALL REGISTER ALL VUE COMPONENTS
+// AUTOMATICALLY REGISTER ALL VUE COMPONENTS
 const files = require.context('../components', true, /\.vue$/i)
 files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-// MANUALLU REGISTER ONE COMPONENT
+// MANUALLY REGISTER ONE COMPONENT
 //Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 
@@ -24,8 +24,6 @@ Vue.directive('cleave', {
         }, 100);
     }
 })
-
-
 
 
 const app = new Vue({

@@ -16,6 +16,7 @@ require('laravel-mix-purgecss');
 
 mix.js('resources/js/app.js', 'dist/js')
     .sass('resources/sass/app.scss', 'dist/css')
+    .sass('resources/sass/separated-file.scss', 'dist/css')
     .options({
         postCss: [
             require('postcss-css-variables')()
@@ -26,7 +27,7 @@ mix.js('resources/js/app.js', 'dist/js')
 
 if (mix.inProduction()) {
     mix.purgeCss({
-            //     Include any special characters you're using in this regular expression (Adjusted for TailwindUI)
-            defaultExtractor: content => content.match(/[\w-/.:]+(?<!:)/g) || []
-        });
+        //     Include any special characters you're using in this regular expression (Adjusted for TailwindUI)
+        defaultExtractor: content => content.match(/[\w-/.:]+(?<!:)/g) || []
+    });
 }
