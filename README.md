@@ -26,4 +26,5 @@ Also contains a sample how to extract css components (TailwindCSS) (https://tail
 # Content
 There's one vue Component with TailwindCSS/TainwildUI example. Its located at `resources/components/ExampleComponent.vue`
 The button in this example has just the `.btn` class. 
+
 The extaction of TailwindCSS classes was made in file `resources/sass/app.scss` and explained here: (https://tailwindcss.com/docs/extracting-components/#extracting-css-components-with-apply)
