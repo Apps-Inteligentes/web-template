@@ -1,10 +1,17 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-
-    // Purge is handled by laravel mix
+    
     purge: {
-        enabled: false
+        content: [
+            './resources/**/*.html',
+            './resources/**/*.vue',
+        ],
+        
+        // These options are passed through directly to PurgeCSS
+        options: {
+            whitelist: [],
+        }
     },
     
     experimental: {

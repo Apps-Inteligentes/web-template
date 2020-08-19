@@ -23,11 +23,3 @@ mix.js('resources/js/app.js', 'dist/js')
         ]
     })
     .tailwind('./tailwind.config.js');
-
-
-if (mix.inProduction()) {
-    mix.purgeCss({
-        //     Include any special characters you're using in this regular expression (Adjusted for TailwindUI)
-        defaultExtractor: content => content.match(/[\w-/.:]+(?<!:)/g) || []
-    });
-}
