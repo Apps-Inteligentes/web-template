@@ -6,6 +6,16 @@ module.exports = {
     purge: {
         enabled: false
     },
+    
+    experimental: {
+        // Add support for `@apply` with complex classes, including responsive and pseudo-class variants
+        // https://github.com/tailwindlabs/tailwindcss/pull/2159
+        applyComplexClasses: true,
+    },
+    
+    future: {
+        removeDeprecatedGapUtilities: true, // will be removed in v2
+    },
 
     theme: {
         extend: {

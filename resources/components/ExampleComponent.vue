@@ -6,8 +6,10 @@
           <h2 class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">
             Pricing
           </h2>
-          <p class="mt-2 text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none">
-            The right price for you, whoever you are
+          <p class="mt-2 text-3xl leading-9 font-extrabold sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none ">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
+              The right price for you, whoever you are
+            </span>
           </p>
           <p class="mt-2 text-xl leading-7 text-gray-300">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum sequi unde repudiandae natus.
