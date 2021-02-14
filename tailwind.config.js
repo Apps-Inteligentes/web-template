@@ -1,40 +1,46 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
+
 
 module.exports = {
-    
-    purge: {
-        content: [
-            './resources/**/*.html',
-            './resources/**/*.vue',
-        ],
-        
-        // These options are passed through directly to PurgeCSS
-        options: {
-            whitelist: [],
-        }
-    },
-    
-    experimental: {
-        // Add support for `@apply` with complex classes, including responsive and pseudo-class variants
-        // https://github.com/tailwindlabs/tailwindcss/pull/2159
-        applyComplexClasses: true,
-    },
-    
-    future: {
-        removeDeprecatedGapUtilities: true, // will be removed in v2
-    },
-
+    purge: [
+        './resources/**/*.js',
+        './resources/**/*.sass',
+        './resources/**/*.vue',
+    ],
+    darkMode: false, // or 'media' or 'class'
     theme: {
+        colors: {
+            // Build your palette here.
+            // // See https://tailwindcss.com/docs/customizing-colors#color-palette-reference
+            transparent: 'transparent',
+            current: 'currentColor',
+            
+            gray: colors.trueGray,
+            red: colors.red,
+            yellow: colors.amber,
+            green: colors.green,
+            blue: colors.lightBlue,
+            indigo: colors.indigo,
+            purple: colors.purple,
+            pink: colors.pink,
+            // Add any other from https://tailwindcss.com/docs/customizing-colors#color-palette-reference
+            
+            white: colors.white,
+            black: colors.black,
+        },
         extend: {
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
             },
         },
     },
-
+    variants: {
+        extend: {},
+    },
     plugins: [
-        require('tailwindcss'),
-        require('@tailwindcss/ui'),
-        require('autoprefixer'),
-    ]
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+        require('@tailwindcss/aspect-ratio'),
+    ],
 }

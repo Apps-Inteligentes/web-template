@@ -1,11 +1,8 @@
-/*
-ORIGINAL CLASSES:
-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out;
-@see: https://tailwindcss.com/docs/extracting-components/#extracting-css-components-with-apply
-
-UPDATED IN TailwindCSS 1.7: https://github.com/tailwindlabs/tailwindcss/pull/2159
-*/
-
 .btn {
-  @apply flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 transition duration-150 ease-in-out hover:bg-gray-800 focus:outline-none focus:shadow-outline;
+  // Apply all this classes from tailwindcss to .btn class
+  @apply block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50 ;
+}
+
+.btn-featured {
+  @apply block w-full text-center rounded-lg border border-transparent bg-indigo-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-700;
 }

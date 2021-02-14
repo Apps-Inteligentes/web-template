@@ -1,18 +1,25 @@
 require('./bootstrap');
 window.Vue = require('vue');
+import Cleave from 'cleave.js';
+import App from '../components/App.vue'
+
+
+
+const app = Vue.createApp(App) // Root component
+const vm = app.mount('#app')
+
 
 
 // AUTOMATICALLY REGISTER ALL VUE COMPONENTS
 const files = require.context('../components', true, /\.vue$/i)
-files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+files.keys().map(key => app.component(key.split('/').pop().split('.')[0], files(key).default))
 
 // MANUALLY REGISTER ONE COMPONENT
-//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+//app.component('example-component', require('./components/ExampleComponent.vue').default);
 
 
-import Cleave from 'cleave.js';
 
-Vue.directive('cleave', {
+app.directive('cleave', {
     inserted: (el, binding) => {
         el.cleave = new Cleave(el, binding.value || {})
     },
@@ -26,6 +33,3 @@ Vue.directive('cleave', {
 })
 
 
-const app = new Vue({
-    el: '#app',
-});
