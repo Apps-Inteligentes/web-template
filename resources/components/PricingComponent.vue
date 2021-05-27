@@ -1,12 +1,12 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <div class="bg-gray-900">
+  <div class="bg-gray-800">
     <div class="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
       <div class="text-center">
         <h2 class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">
           Pricing
         </h2>
-        <p class="mt- text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
+        <p class="mt- text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-100 sm:text-4xl lg:text-5xl">
           The right price for you, whoever you are
         </p>
         <p class="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl">
@@ -17,7 +17,7 @@
 
     <div class="mt-16 bg-white pb-12 lg:mt-20 lg:pb-20">
       <div class="relative z-0">
-        <div class="absolute inset-0 h-5/6 bg-gray-900 lg:h-2/3"></div>
+        <div class="absolute inset-0 h-5/6 bg-gray-800 lg:h-2/3"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="relative lg:grid lg:grid-cols-7">
             <div class="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
@@ -83,7 +83,7 @@
                     </ul>
                     <div class="mt-8">
                       <div class="rounded-lg shadow-md">
-                        <a href="#" class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50" aria-describedby="tier-hobby">
+                        <a href="#" class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-blue-600 hover:bg-gray-50" aria-describedby="tier-hobby">
                           Start your trial
                         </a>
                       </div>
@@ -94,10 +94,10 @@
             </div>
             <div class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4">
               <div class="relative z-10 rounded-lg shadow-xl">
-                <div class="pointer-events-none absolute inset-0 rounded-lg border-2 border-indigo-600" aria-hidden="true"></div>
+                <div class="pointer-events-none absolute inset-0 rounded-lg border-2 border-blue-600" aria-hidden="true"></div>
                 <div class="absolute inset-x-0 top-0 transform translate-y-px">
                   <div class="flex justify-center transform -translate-y-1/2">
-                  <span class="inline-flex rounded-full bg-indigo-600 px-4 py-1 text-sm font-semibold tracking-wider uppercase text-white">
+                  <span class="inline-flex rounded-full bg-blue-600 px-4 py-1 text-sm font-semibold tracking-wider uppercase text-white">
                     Most popular
                   </span>
                   </div>
@@ -186,7 +186,7 @@
                   </ul>
                   <div class="mt-10">
                     <div class="rounded-lg shadow-md">
-                      <a href="#" class="btn-featured" aria-describedby="tier-growth">
+                      <a href="#" class="block w-full text-center rounded-lg border border-transparent px-6 py-4 text-xl leading-6 font-medium text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600" aria-describedby="tier-growth">
                         Start your trial
                       </a>
                     </div>

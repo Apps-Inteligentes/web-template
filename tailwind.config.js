@@ -3,6 +3,7 @@ const colors = require('tailwindcss/colors')
 
 
 module.exports = {
+    mode: 'jit',
     purge: [
         './resources/**/*.js',
         './resources/**/*.sass',
@@ -42,5 +43,6 @@ module.exports = {
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/aspect-ratio'),
+        require('@tailwindcss/line-clamp'),
     ],
 }

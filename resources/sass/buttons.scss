@@ -1,8 +1,4 @@
 .btn {
   // Apply all this classes from tailwindcss to .btn class
-  @apply block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50 ;
-}
-
-.btn-featured {
-  @apply block w-full text-center rounded-lg border border-transparent bg-indigo-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-700;
+  @apply block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-blue-600 hover:bg-gray-50 ;
 }
